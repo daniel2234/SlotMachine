@@ -77,9 +77,23 @@ class ViewController: UIViewController {
             var slotImageView = UIImageView()
             slotImageView.backgroundColor = UIColor.yellowColor()
             
-            slotImageView.frame = CGRect(x: containerView.bounds.origin.x + (containerView.bounds.size.width * CGFloat(containerNumber) * kThird) , y: containerView.bounds.origin.y + (containerView.bounds.size.height * CGFloat(slotNumber) * kThird), width: containerView.bounds.width * kThird - kMarginForSlot, height: containerView.bounds.height * kThird - kMarginForSlot)
+            slotImageView.frame = CGRect(x: containerView.bounds.origin.x + (containerView.bounds.size.width * CGFloat(containerNumber) * kThird) + kMarginForSlot , y: containerView.bounds.origin.y + (containerView.bounds.size.height * CGFloat(slotNumber) * kThird) + kMarginForSlot, width: containerView.bounds.width * kThird - kMarginForSlot, height: containerView.bounds.height * kThird - kMarginForSlot)
                 containerView.addSubview(slotImageView)
+                
+//            var labelSlot = UILabel()
+//            labelSlot.text = "C\(containerNumber)S\(slotNumber)"
+//            labelSlot.textColor = UIColor.blackColor()
+//            labelSlot.sizeToFit()
+//            labelSlot.center.x = CGFloat(slotImageView.bounds.width / 2.0);
+//            labelSlot.center.y = CGFloat(slotImageView.bounds.height / 2.0);
+//                
+//
+//            slotImageView.addSubview(labelSlot)
+//            
+//            containerView.addSubview(slotImageView)
+            
             }
+            
         
         }
     
